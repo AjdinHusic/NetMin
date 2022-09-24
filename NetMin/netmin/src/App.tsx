@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.less";
 import { QueryClient, QueryClientProvider, useQueryClient } from "react-query";
 import AppLayout from "./layout/Layout";
 

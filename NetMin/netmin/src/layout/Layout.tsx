@@ -1,13 +1,14 @@
 import React from "react";
 import { useGetDatabases } from "../data/databases/getDatabases";
 import { Layout, Menu } from "antd";
+import "./Layout.css";
 
 const AppLayout: React.FC = () => {
   const { databases } = useGetDatabases();
 
   return (
-    <Layout>
-      <Layout.Sider>
+    <Layout className={"main-layout"}>
+      <Layout.Sider className={"main-sider"}>
         <Menu>
           {databases.map((db) => (
             <Menu.Item>{db.database}</Menu.Item>
